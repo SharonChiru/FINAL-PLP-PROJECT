@@ -1,0 +1,28 @@
+<!-- events/templates/events/service_providers.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Providers</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Service Providers</h1>
+        <h2>{{ category }}</h2>
+        <ul>
+            <!-- Display the list of service providers here -->
+           
+
+
+            {% for provider in providers %}
+                <li>{{ provider.name }} - {{ provider.contact }}</li>
+            {% endfor %}
+
+    
+        </ul>
+    </div>
+</body>
+</html>
