@@ -9,10 +9,12 @@ def home(request):
     context=context={'vendors':vendors}
 
     return render(request, 'events/home.html',context)
+
 def events_detail(request,pk):
     event=get_object_or_404(Vendor,pk=pk)
     context={'event':event}
     return render (request, 'events/detail.html',context)
+
 def who_we_are(request):
     return render(request, 'events/who_we_are.html')
 
@@ -34,7 +36,7 @@ def our_team(request):
 #from django.shortcuts import render
 
 def service_providers(request, category):
-    # Dummy data for demonstration purposes
+    
     providers = [
         {'name': 'provider name', 'contact': 'provider contact'},
         {'name': 'Provider name', 'contact': 'provider contact'},
@@ -42,7 +44,7 @@ def service_providers(request, category):
         {'name': 'Provider name', 'contact': 'provider contact'},
         {'name': 'Provider name', 'contact': 'provider contact'},
 
-        # Add more dummy data or retrieve real data from the database
+        
     ]
 
     context = {'category': category, 'providers': providers}

@@ -10,12 +10,47 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
 </head>
 <body>
+    <nav class="navbar">
+         <div class="logo"> <a href="">ServiceConnect Hub</a></div>
+         <div class="item">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+         </div>
+    </nav>
    <div class="vendor-container">
     {% for vendor in vendors %}
-    <a href="{%url 'events:detail' vendor.pk %}"><p>{{vendor.title}}</p>
-        <img src="{{vendor.image.url}}" alt=""></a>
+    <a href="{%url 'events:detail' vendor.pk %}">
+        <p>{{vendor.title}}</p>
+        <img src="{{vendor.image.url}}" alt=""class="image"></a>
+    
     {% endfor %}
    </div> 
+   <footer>
+    <div>
+        <h1>ServiceConnect Hub</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla, quisquam nihil debitis totam non explicabo qui illo fuga. Blanditiis!</p>
+    </div>
+    <div>
+        <h1>Useful Links</h1>
+        <ul>
+           <li> <a href="">Home</a></li> 
+           <li> <a href="">Contact</a>  </li>
+           <li> <a href="">About</a></li>
+           <li> <a href="">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <div>
+        <h1>Socials</h1>
+        <div> <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            
+        </div>
+
+    </div>
+   </footer>
+   <script src="https://kit.fontawesome.com/61d76ad3f6.js" crossorigin="anonymous"></script>
 </body>
 </html>
 
