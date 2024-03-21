@@ -9,6 +9,38 @@
     
 }
 
+/* Add styling for the social media links */
+.Socials div a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Social media icon colors */
+.Socials div a i.fa-facebook-f { color: #3b5998; }
+.Socials div a i.fa-instagram { color: #e4405f; }
+.Socials div a i.fa-youtube { color: #c4302b; }
+
+/* Hover effect */
+.Socials div a:hover {
+    color: #ffd700; /* Change text color on hover (use your preferred color) */
+}
+
+/* Background and padding for the container */
+.Socials {
+    background-color: #333; /* Dark background color */
+    padding: 10px; /* Adjust padding as needed */
+    border-radius: 5px;
+}
+
+/* Center the social media icons horizontally */
+.Socials div {
+    text-align: center;
+}
+
 .logo a{
 
     text-decoration: none;

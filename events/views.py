@@ -15,20 +15,13 @@ def events_detail(request,pk):
     context={'event':event}
     return render (request, 'events/detail.html',context)
 
-def who_we_are(request):
-    return render(request, 'events/who_we_are.html')
+def about(request):
+    return render(request, 'events/about.html')
 
-def our_mission(request):
-    return render(request, 'events/our_mission.html')
+def privacy_policy(request):
+    return render(request, 'events/privacy_policy.html')
 
-def our_vision(request):
-    return render(request, 'events/our_vision.html')
 
-def our_values(request):
-    return render(request, 'events/our_values.html')
-
-def our_team(request):
-    return render(request, 'events/our_team.html')
 
 
 # events/views.py
@@ -53,7 +46,7 @@ def service_providers(request, category):
 # events/views.py
 #from django.shortcuts import render
 
-def contact(request):
+def contacts(request):
     return render(request, 'events/contacts.html')
 
 

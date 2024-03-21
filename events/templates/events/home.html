@@ -14,8 +14,8 @@
          <div class="logo"> <a href="">ServiceConnect Hub</a></div>
          <div class="item">
             <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Contact</a>
+            <a href="{% url 'events:about' %}">About</a>
+            <a href="{% url 'events:contacts' %}">Contact</a>
          </div>
     </nav>
    <div class="vendor-container">
@@ -29,15 +29,16 @@
    <footer class="">
     <div>
         <h1>ServiceConnect Hub</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla, quisquam nihil debitis totam non explicabo qui illo fuga. Blanditiis!</p>
+        <p>Established in 2024, ServiceConnect Hub is an innovative solution that provides a centralized platform that connects event service providers/vendors with clients, with the goal of streamlining the event planning process.
+             Our platform acts as a centralised hub for effective communication, trust building and creates a vibrant environment that allows clients and event service providers to work together seamlessly.</p>
     </div>
     <div>
         <h1>Useful Links</h1>
         <ul>
            <li> <a href="">Home</a></li> 
-           <li> <a href="">Contact</a>  </li>
-           <li> <a href="">About</a></li>
-           <li> <a href="">Privacy Policy</a></li>
+           <li> <a href="{% url 'events:contacts' %}">Contact</a>  </li>
+           <li> <a href="{% url 'events:about' %}">About</a></li>
+           <li> <a href="{% url 'events:privacy_policy' %}">Privacy Policy</a></li>
         </ul>
     </div>
     <div>
